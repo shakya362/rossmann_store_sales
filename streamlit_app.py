@@ -8,6 +8,7 @@ import glob
 import os
 import sys
 
+from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
@@ -26,7 +27,7 @@ MODELS_DIR = os.path.dirname(__file__)
 
 @st.cache_resource
 def load_bundle():
-    candidates = sorted(glob.glob(os.path.join(MODELS_DIR, "serving-bundle-*.pkl")))
+    candidates = sorted(glob.glob(os.path.join(MODELS_DIR, "serving-bundle-*.pkl.")))
     if not candidates:
         st.error("No serving bundle found in ../models. Run build_serving_bundle.py first.")
         st.stop()
