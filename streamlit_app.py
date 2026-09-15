@@ -12,7 +12,7 @@ import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st
-
+import gzip
 sys.path.insert(0, os.path.dirname(__file__))
 from feature_engineering import (
     engineer_features, apply_store_target_encoding, to_model_matrix
