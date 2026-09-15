@@ -1,4 +1,3 @@
-```python
 """
 Rossmann Sales Forecasting — Streamlit Serving App
 Task 2.7 (model serving, using Streamlit instead of MLflow) + Task 3 (dashboard)
@@ -674,4 +673,3 @@ st.caption(
     "LightGBM quantile regression "
     "(5th–95th percentile)."
 )
-```
